@@ -1,0 +1,38 @@
+<annotation verified="no">
+  <folder>1D3001 Frames</folder>
+  <filename>1D3001P3-074</filename>
+  <path>/home/crnovak/Desktop/1D3001 Frames/1D3001P3-074.png</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1280</width>
+    <height>720</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>1</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>1</xmin>
+      <ymin>425</ymin>
+      <xmax>108</xmax>
+      <ymax>549</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>460</xmin>
+      <ymin>248</ymin>
+      <xmax>705</xmax>
+      <ymax>397</ymax>
+    </bndbox>
+  </object>
+</annotation>
