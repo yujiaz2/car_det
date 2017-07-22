@@ -1,4 +1,5 @@
 # Detection results
 
-Blue rectangles label groundtruths.
-Green rectangles label detection results.
+<span style="color: blue"> Blue </span> rectangles label groundtruths.
+
+<span style="color: green"> Green </span> rectangles label detection results.
