@@ -25,8 +25,8 @@ $ ./tools/train_net.py --gpu 0 --weights output/marker/car/train/vgg16_faster_rc
 
 ## evaluation and test
 
-` ``
+` 
 $ ./tools/test_net.py --gpu 0 --def models/car/test.prototxt --net output/marker/car/train/vgg16_faster_rcnn_car_iter_10000.caffemodel --imdb car_val --cfg experiments/cfgs/config.yml
-` ``
+` 
 
 Reference: [Detection: Faster  R-CNN](https://huangying-zhan.github.io/2016/09/22/detection-faster-rcnn.html).
