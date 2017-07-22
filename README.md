@@ -12,15 +12,21 @@ This repo shows an example of car detection by finetuning a model using a new da
 * Fine-tune Car_0.caffemodel to get the final model.
 
 ** first finetune:
+
 ` ``
 $ ./tools/train_net.py --gpu 0 --weights data/imagenet_models/VGG16.v2.caffemodel --imdb car_train --cfg experiments/cfgs/config.yml --solver models/car/solver.prototxt --iter 0
 ` ``
 
 ** second finetune:
+
 ` ``
 $ ./tools/train_net.py --gpu 0 --weights output/marker/car/train/vgg16_faster_rcnn_car_iter_0.caffemodel --imdb car_train --cfg experiments/cfgs/config.yml --solver models/car/solver.prototxt --iter 10000
 ` ``
 
 ## evaluation and test
+
+` ``
+$ ./tools/test_net.py --gpu 0 --def models/car/test.prototxt --net output/marker/car/train/vgg16_faster_rcnn_car_iter_10000.caffemodel --imdb car_val --cfg experiments/cfgs/config.yml
+` ``
 
 Reference: [Detection: Faster  R-CNN](https://huangying-zhan.github.io/2016/09/22/detection-faster-rcnn.html).
