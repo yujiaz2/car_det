@@ -1,5 +1,5 @@
 # Detection results
 
-** Blue rectangles label groundtruths.
+* Blue rectangles label groundtruths.
 
-** Green rectangles label detection results.
+* Green rectangles label detection results.
