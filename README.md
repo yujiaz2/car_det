@@ -11,13 +11,13 @@ This repo shows an example of car detection by finetuning a model using a new da
 * Rename the layers back to cls_score and bbox_pred.
 * Fine-tune Car_0.caffemodel to get the final model.
 
-### first finetune:
+** first finetune:
 
 ` 
 $ ./tools/train_net.py --gpu 0 --weights data/imagenet_models/VGG16.v2.caffemodel --imdb car_train --cfg experiments/cfgs/config.yml --solver models/car/solver.prototxt --iter 0
 ` 
 
-### second finetune:
+** second finetune:
 
 ` 
 $ ./tools/train_net.py --gpu 0 --weights output/marker/car/train/vgg16_faster_rcnn_car_iter_0.caffemodel --imdb car_train --cfg experiments/cfgs/config.yml --solver models/car/solver.prototxt --iter 10000
